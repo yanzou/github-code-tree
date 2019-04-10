@@ -53,7 +53,7 @@ const mergeObjects = (og, so) => {
 const openLargeDiff = () => $('.load-diff-button').click();
 
 const init = (savedItems) => {
-  if ($('.js-diff-progressive-spinner').length || !$('#files').length) {
+  if ($('.js-diff-progressive-spinner').length <= 1 || !$('#files').length <= 1) {
     return;
   }
 
