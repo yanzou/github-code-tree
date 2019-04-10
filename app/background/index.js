@@ -74,8 +74,7 @@ const init = (savedItems) => {
       const { top } = $(`.toc-diff-stats`).offset();
       topOffset = top + 50;
     } else {
-      const $tabs = $(`.tabnav-tabs`);
-      const { top } = $tabs && $tabs.length ? $(`.tabnav-tabs`).offset() : { top: 0 };
+      const { top } = $(`.tabnav-tabs`).offset();
       topOffset = top + 120;
     }
 
